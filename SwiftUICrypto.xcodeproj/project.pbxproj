@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8B8EC01528AA110600186C53 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EC01428AA110600186C53 /* HomeView.swift */; };
+		8B8EC01828AA1A7100186C53 /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */; };
+		8B8EC01A28AA398200186C53 /* CircleButtonAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */; };
+		8B8EC01D28AA539100186C53 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8EC01C28AA539100186C53 /* CoinModel.swift */; };
 		8BA7FB5828A7D3EE0079FFB0 /* SwiftUICryptoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FB5728A7D3EE0079FFB0 /* SwiftUICryptoApp.swift */; };
 		8BA7FB5A28A7D3EE0079FFB0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FB5928A7D3EE0079FFB0 /* ContentView.swift */; };
 		8BA7FB5F28A7D3EF0079FFB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7FB5E28A7D3EF0079FFB0 /* Preview Assets.xcassets */; };
@@ -17,6 +20,9 @@
 
 /* Begin PBXFileReference section */
 		8B8EC01428AA110600186C53 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonAnimationView.swift; sourceTree = "<group>"; };
+		8B8EC01C28AA539100186C53 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
 		8BA7FB5428A7D3EE0079FFB0 /* SwiftUICrypto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUICrypto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BA7FB5728A7D3EE0079FFB0 /* SwiftUICryptoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUICryptoApp.swift; sourceTree = "<group>"; };
 		8BA7FB5928A7D3EE0079FFB0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,7 @@
 		8B8EC01028AA10D800186C53 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8B8EC01628AA1A6200186C53 /* Componenets */,
 				8B8EC01128AA10E200186C53 /* Home */,
 			);
 			path = Core;
@@ -68,6 +75,23 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		8B8EC01628AA1A6200186C53 /* Componenets */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */,
+				8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */,
+			);
+			path = Componenets;
+			sourceTree = "<group>";
+		};
+		8B8EC01B28AA538200186C53 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EC01C28AA539100186C53 /* CoinModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		8BA7FB4B28A7D3ED0079FFB0 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +111,7 @@
 		8BA7FB5628A7D3EE0079FFB0 /* SwiftUICrypto */ = {
 			isa = PBXGroup;
 			children = (
+				8B8EC01B28AA538200186C53 /* Models */,
 				8B8EC01028AA10D800186C53 /* Core */,
 				8BA7FB6728A7D4DC0079FFB0 /* Extensions */,
 				8BA7FB5728A7D3EE0079FFB0 /* SwiftUICryptoApp.swift */,
@@ -186,7 +211,10 @@
 				8BA7FB5A28A7D3EE0079FFB0 /* ContentView.swift in Sources */,
 				8B8EC01528AA110600186C53 /* HomeView.swift in Sources */,
 				8BA7FB6928A7D5050079FFB0 /* Colors.swift in Sources */,
+				8B8EC01828AA1A7100186C53 /* CircleButtonView.swift in Sources */,
 				8BA7FB5828A7D3EE0079FFB0 /* SwiftUICryptoApp.swift in Sources */,
+				8B8EC01A28AA398200186C53 /* CircleButtonAnimationView.swift in Sources */,
+				8B8EC01D28AA539100186C53 /* CoinModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
