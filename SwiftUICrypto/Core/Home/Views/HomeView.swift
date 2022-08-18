@@ -16,16 +16,17 @@ struct HomeView: View {
         ZStack {
             Color.theme.background
                 .ignoresSafeArea()
-            
             VStack {
                 homeHeader
-                
-                List {
-                    CoinRowView(coin: DeveloperPreview.instance.coin, showHoldingColumn: false)
+                if !showPortfolio {
+                    List {
+                        ForEach(vm.allCoincs) { coin in
+                            CoinRowView(coin: coin, showHoldingColumn: false)
+                        }
+                    }
+                    .listStyle(PlainListStyle())
+                    .transition(.move(edge: .leading))
                 }
-                
-                .listStyle(PlainListStyle())
-                
                 Spacer(minLength: 0)
             }
         }
@@ -42,12 +43,18 @@ struct HomeView_Previews: PreviewProvider {
     }
 }
 
-
 extension HomeView {
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
                 .animation(.none)
+            //                    .onTapGesture {
+            //                        if showPortfolio {
+            //                            showPortfolioView.toggle()
+            //                        } else {
+            //                            showSettingsView.toggle()
+            //                        }
+            //                    }
                 .background(
                     CircleButtonAnimationView(animate: $showPortfolio)
                 )
@@ -57,10 +64,15 @@ extension HomeView {
                 .fontWeight(.heavy)
                 .foregroundColor(Color.theme.accent)
                 .animation(.none)
-            CircleButtonView(iconName: "plus")
-                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
             Spacer()
             CircleButtonView(iconName: "chevron.right")
+                .rotationEffect(Angle(degrees: showPortfolio ? 180 : 0))
+                .onTapGesture {
+                    withAnimation(.spring()) {
+                        showPortfolio.toggle()
+                    }
+                }
         }
+        .padding(.horizontal)
     }
 }

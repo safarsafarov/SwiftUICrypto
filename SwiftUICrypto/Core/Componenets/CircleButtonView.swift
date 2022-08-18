@@ -12,7 +12,7 @@ struct CircleButtonView: View {
     let iconName: String
     
     var body: some View {
-        Image(systemName: "heart.fill")
+        Image(systemName: iconName)
             .font(.headline)
             .foregroundColor(Color.theme.accent)
             .frame(width: 50, height: 50)
@@ -32,10 +32,10 @@ struct CircleButtonView_Previews: PreviewProvider {
         Group {
             CircleButtonView(iconName: "info")
                 .previewLayout(.sizeThatFits)
+
             CircleButtonView(iconName: "plus")
                 .previewLayout(.sizeThatFits)
-                .colorScheme(.dark)
+                .preferredColorScheme(.dark)
         }
-        
     }
 }
