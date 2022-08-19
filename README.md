@@ -1,3 +1,3 @@
-![Alt text](screen1.png "Optional title" width="200")
-![Alt text](screen2.png "Optional title")
-![Alt text](screen2.png "Optional title")
+![Alt text](screen1.png "First Screen"){width=250}
+![Alt text](screen2.png "Second Screen"){width=250}
+![Alt text](screen2.png "Third Screen"){width=250}
