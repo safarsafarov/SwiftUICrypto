@@ -75,7 +75,6 @@ struct HomeView_Previews: PreviewProvider {
 
 extension HomeView {
     
-    // Home Header
     private var homeHeader: some View {
         HStack {
             CircleButtonView(iconName: showPortfolio ? "plus" : "info")
@@ -107,8 +106,7 @@ extension HomeView {
         }
         .padding(.horizontal)
     }
-    
-    // All Coins List
+        
     private var allCoinsList: some View {
         List {
             ForEach(vm.allCoins) { coin in
@@ -123,7 +121,6 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
-    // Portfolio Coins List
     private var portfolioCoinsList: some View {
         List {
             ForEach(vm.portfolioCoins) { coin in
@@ -138,7 +135,6 @@ extension HomeView {
         .listStyle(PlainListStyle())
     }
     
-    // Portfolio Empty Text
     private var portfolioEmptyText: some View {
         Text("You haven't added any coins to your portfolio yet. Click the + button to get started! 🧐")
             .font(.callout)
@@ -148,13 +144,11 @@ extension HomeView {
             .padding(50)
     }
     
-    // segue
     private func segue(coin: CoinModel) {
         selectedCoin = coin
         showDetailView.toggle()
     }
 
-    // coulmnTitles
     private var columnTitles: some View {
         HStack {
             HStack(spacing: 4) {

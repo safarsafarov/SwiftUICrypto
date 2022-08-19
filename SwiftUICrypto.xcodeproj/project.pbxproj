@@ -20,6 +20,9 @@
 		8BA7FB5F28A7D3EF0079FFB0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BA7FB5E28A7D3EF0079FFB0 /* Preview Assets.xcassets */; };
 		8BA7FB6928A7D5050079FFB0 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BA7FB6828A7D5050079FFB0 /* Colors.swift */; };
 		8BB791CA28AE08EE002BE8FE /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB791C928AE08EE002BE8FE /* HomeViewModel.swift */; };
+		8BBF499E28AF978100E4DABA /*  PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF499D28AF978100E4DABA /*  PortfolioView.swift */; };
+		8BBF49A028AF97A400E4DABA /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF499F28AF97A400E4DABA /* HomeStatsView.swift */; };
+		8BBF49A328AF97EA00E4DABA /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		8BA7FB5E28A7D3EF0079FFB0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		8BA7FB6828A7D5050079FFB0 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		8BB791C928AE08EE002BE8FE /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		8BBF499D28AF978100E4DABA /*  PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " PortfolioView.swift"; sourceTree = "<group>"; };
+		8BBF499F28AF97A400E4DABA /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
+		8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,8 @@
 			children = (
 				8B8EC01428AA110600186C53 /* HomeView.swift */,
 				8B1C7CF628ACCE44005D910F /* CoinRowView.swift */,
+				8BBF499D28AF978100E4DABA /*  PortfolioView.swift */,
+				8BBF499F28AF97A400E4DABA /* HomeStatsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -88,8 +96,7 @@
 		8B8EC01628AA1A6200186C53 /* Componenets */ = {
 			isa = PBXGroup;
 			children = (
-				8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */,
-				8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */,
+				8BBF49A128AF97CF00E4DABA /* CircleButton */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -148,6 +155,16 @@
 				8B1C7CFA28ACEB20005D910F /* Double.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8BBF49A128AF97CF00E4DABA /* CircleButton */ = {
+			isa = PBXGroup;
+			children = (
+				8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */,
+				8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */,
+				8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */,
+			);
+			path = CircleButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -220,14 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF499E28AF978100E4DABA /*  PortfolioView.swift in Sources */,
 				8B1C7CF728ACCE44005D910F /* CoinRowView.swift in Sources */,
 				8BB791CA28AE08EE002BE8FE /* HomeViewModel.swift in Sources */,
+				8BBF49A028AF97A400E4DABA /* HomeStatsView.swift in Sources */,
 				8BA7FB5A28A7D3EE0079FFB0 /* ContentView.swift in Sources */,
 				8B8EC01528AA110600186C53 /* HomeView.swift in Sources */,
 				8BA7FB6928A7D5050079FFB0 /* Colors.swift in Sources */,
 				8B8EC01828AA1A7100186C53 /* CircleButtonView.swift in Sources */,
 				8BA7FB5828A7D3EE0079FFB0 /* SwiftUICryptoApp.swift in Sources */,
 				8B8EC01A28AA398200186C53 /* CircleButtonAnimationView.swift in Sources */,
+				8BBF49A328AF97EA00E4DABA /* SearchBarView.swift in Sources */,
 				8B1C7CF928ACCEE7005D910F /* PreviewProvider.swift in Sources */,
 				8B1C7CFB28ACEB20005D910F /* Double.swift in Sources */,
 				8B8EC01D28AA539100186C53 /* CoinModel.swift in Sources */,
