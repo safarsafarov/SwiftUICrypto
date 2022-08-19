@@ -23,6 +23,10 @@
 		8BBF499E28AF978100E4DABA /*  PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF499D28AF978100E4DABA /*  PortfolioView.swift */; };
 		8BBF49A028AF97A400E4DABA /* HomeStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF499F28AF97A400E4DABA /* HomeStatsView.swift */; };
 		8BBF49A328AF97EA00E4DABA /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */; };
+		8BBF49A528AF982500E4DABA /* StaticView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49A428AF982500E4DABA /* StaticView.swift */; };
+		8BBF49A728AF983C00E4DABA /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49A628AF983C00E4DABA /* XMarkButton.swift */; };
+		8BBF49AC28AF987900E4DABA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49AB28AF987900E4DABA /* DetailViewModel.swift */; };
+		8BBF49AE28AF98A100E4DABA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49AD28AF98A100E4DABA /* ChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		8BBF499D28AF978100E4DABA /*  PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " PortfolioView.swift"; sourceTree = "<group>"; };
 		8BBF499F28AF97A400E4DABA /* HomeStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStatsView.swift; sourceTree = "<group>"; };
 		8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
+		8BBF49A428AF982500E4DABA /* StaticView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticView.swift; sourceTree = "<group>"; };
+		8BBF49A628AF983C00E4DABA /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
+		8BBF49AB28AF987900E4DABA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		8BBF49AD28AF98A100E4DABA /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +67,7 @@
 		8B8EC01028AA10D800186C53 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8BBF49A828AF985700E4DABA /* Detail */,
 				8B8EC01628AA1A6200186C53 /* Componenets */,
 				8B8EC01128AA10E200186C53 /* Home */,
 			);
@@ -97,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				8BBF49A128AF97CF00E4DABA /* CircleButton */,
+				8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */,
+				8BBF49A428AF982500E4DABA /* StaticView.swift */,
+				8BBF49A628AF983C00E4DABA /* XMarkButton.swift */,
 			);
 			path = Componenets;
 			sourceTree = "<group>";
@@ -162,9 +174,33 @@
 			children = (
 				8B8EC01728AA1A7100186C53 /* CircleButtonView.swift */,
 				8B8EC01928AA398200186C53 /* CircleButtonAnimationView.swift */,
-				8BBF49A228AF97EA00E4DABA /* SearchBarView.swift */,
 			);
 			path = CircleButton;
+			sourceTree = "<group>";
+		};
+		8BBF49A828AF985700E4DABA /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF49AA28AF986B00E4DABA /* Views */,
+				8BBF49A928AF986200E4DABA /* ViewModels */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		8BBF49A928AF986200E4DABA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF49AB28AF987900E4DABA /* DetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8BBF49AA28AF986B00E4DABA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF49AD28AF98A100E4DABA /* ChartView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,9 +273,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8BBF49AC28AF987900E4DABA /* DetailViewModel.swift in Sources */,
 				8BBF499E28AF978100E4DABA /*  PortfolioView.swift in Sources */,
 				8B1C7CF728ACCE44005D910F /* CoinRowView.swift in Sources */,
+				8BBF49A528AF982500E4DABA /* StaticView.swift in Sources */,
 				8BB791CA28AE08EE002BE8FE /* HomeViewModel.swift in Sources */,
+				8BBF49AE28AF98A100E4DABA /* ChartView.swift in Sources */,
 				8BBF49A028AF97A400E4DABA /* HomeStatsView.swift in Sources */,
 				8BA7FB5A28A7D3EE0079FFB0 /* ContentView.swift in Sources */,
 				8B8EC01528AA110600186C53 /* HomeView.swift in Sources */,
@@ -247,6 +286,7 @@
 				8B8EC01828AA1A7100186C53 /* CircleButtonView.swift in Sources */,
 				8BA7FB5828A7D3EE0079FFB0 /* SwiftUICryptoApp.swift in Sources */,
 				8B8EC01A28AA398200186C53 /* CircleButtonAnimationView.swift in Sources */,
+				8BBF49A728AF983C00E4DABA /* XMarkButton.swift in Sources */,
 				8BBF49A328AF97EA00E4DABA /* SearchBarView.swift in Sources */,
 				8B1C7CF928ACCEE7005D910F /* PreviewProvider.swift in Sources */,
 				8B1C7CFB28ACEB20005D910F /* Double.swift in Sources */,
