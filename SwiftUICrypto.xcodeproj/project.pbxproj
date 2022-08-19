@@ -27,6 +27,8 @@
 		8BBF49A728AF983C00E4DABA /* XMarkButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49A628AF983C00E4DABA /* XMarkButton.swift */; };
 		8BBF49AC28AF987900E4DABA /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49AB28AF987900E4DABA /* DetailViewModel.swift */; };
 		8BBF49AE28AF98A100E4DABA /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49AD28AF98A100E4DABA /* ChartView.swift */; };
+		8BBF49B028AF9A9B00E4DABA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49AF28AF9A9B00E4DABA /* DetailView.swift */; };
+		8BBF49B428AF9ADE00E4DABA /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BBF49B328AF9ADE00E4DABA /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		8BBF49A628AF983C00E4DABA /* XMarkButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XMarkButton.swift; sourceTree = "<group>"; };
 		8BBF49AB28AF987900E4DABA /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		8BBF49AD28AF98A100E4DABA /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		8BBF49AF28AF9A9B00E4DABA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		8BBF49B328AF9ADE00E4DABA /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +71,7 @@
 		8B8EC01028AA10D800186C53 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				8BBF49B128AF9AC900E4DABA /* Settings */,
 				8BBF49A828AF985700E4DABA /* Detail */,
 				8B8EC01628AA1A6200186C53 /* Componenets */,
 				8B8EC01128AA10E200186C53 /* Home */,
@@ -199,6 +204,23 @@
 			isa = PBXGroup;
 			children = (
 				8BBF49AD28AF98A100E4DABA /* ChartView.swift */,
+				8BBF49AF28AF9A9B00E4DABA /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8BBF49B128AF9AC900E4DABA /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF49B228AF9AD100E4DABA /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		8BBF49B228AF9AD100E4DABA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8BBF49B328AF9ADE00E4DABA /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +300,7 @@
 				8B1C7CF728ACCE44005D910F /* CoinRowView.swift in Sources */,
 				8BBF49A528AF982500E4DABA /* StaticView.swift in Sources */,
 				8BB791CA28AE08EE002BE8FE /* HomeViewModel.swift in Sources */,
+				8BBF49B428AF9ADE00E4DABA /* SettingsView.swift in Sources */,
 				8BBF49AE28AF98A100E4DABA /* ChartView.swift in Sources */,
 				8BBF49A028AF97A400E4DABA /* HomeStatsView.swift in Sources */,
 				8BA7FB5A28A7D3EE0079FFB0 /* ContentView.swift in Sources */,
@@ -289,6 +312,7 @@
 				8BBF49A728AF983C00E4DABA /* XMarkButton.swift in Sources */,
 				8BBF49A328AF97EA00E4DABA /* SearchBarView.swift in Sources */,
 				8B1C7CF928ACCEE7005D910F /* PreviewProvider.swift in Sources */,
+				8BBF49B028AF9A9B00E4DABA /* DetailView.swift in Sources */,
 				8B1C7CFB28ACEB20005D910F /* Double.swift in Sources */,
 				8B8EC01D28AA539100186C53 /* CoinModel.swift in Sources */,
 			);
