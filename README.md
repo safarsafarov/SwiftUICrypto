@@ -1,1 +1,4 @@
-![Alt text](screen1.png "First Screen") ![Alt text](screen2.png "Second Screen") ![Alt text](screen2.png "Third Screen")
+
+<img src="screen1.png" width=250> 
+<img src="screen2.png" width=250> 
+<img src="screen3.png" width=250> 
